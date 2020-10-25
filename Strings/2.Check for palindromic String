@@ -1,0 +1,32 @@
+#include<bits/stdc++.h>
+using namespace std;
+
+int Palindrome(string &str)
+{
+    string temp = str;
+    reverse(temp.begin(),temp.end());
+    for(int i=0;i<str.length();i++)
+    {
+        if(str[i]==temp[i])
+            continue;
+        else{
+            return 0;
+            break;
+        }
+    }
+    
+    return 1;
+}
+
+int main(){
+    string str ;
+    getline(cin,str);
+ 
+    if(Palindrome(str))
+        cout<<"Palindromic string";
+    else
+        cout<<"Not a Palindromic string";
+    
+    return 0;
+    
+}
