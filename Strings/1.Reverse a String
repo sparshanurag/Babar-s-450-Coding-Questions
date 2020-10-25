@@ -1,3 +1,5 @@
+METHOD -1 
+
 #include<bits/stdc++.h>
 using namespace std;
 
@@ -27,3 +29,17 @@ int main(){
     return 0;
     
 }
+
+METHOD -2 [Using inbuilt reverse function]
+
+#include <bits/stdc++.h> 
+using namespace std; 
+int main() 
+{ 
+    string str = "geeksforgeeks"; 
+  
+    reverse(str.begin(), str.end()); 
+  
+    cout << str; 
+    return 0; 
+} 
